@@ -1,21 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity"
         android:orientation="vertical"
->
+        android:background="@color/white"
+        >
+        <ImageView
+                android:src="@drawable/background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        </ImageView>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Até qual algarismo você deseja ver a sequencia de fibonacci?"
+            android:text="Até qual algarismo você deseja ver a sequência de fibonacci?"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="30dp"
-            android:textColor="#845EC2"
-            android:fontFamily="sans-serif"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/capriola"
             android:textSize="15sp"
 
     />
@@ -27,7 +40,8 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="15dp"
             android:ems="10"
-            android:textColor="#FEFEDF"
+            android:inputType="number"
+            android:textColor="@color/black"
     />
     <Button
             android:id="@+id/botao"
@@ -36,7 +50,8 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
             android:text="Enter"
-            android:backgroundTint="#00C9A7"/>
+            android:backgroundTint="#c87941"
+    />
     <TextView
             android:id="@+id/resultado"
             android:layout_width="wrap_content"
@@ -44,9 +59,9 @@
             android:text=" "
             android:layout_marginStart="10dp"
             android:layout_marginTop="30dp"
-            android:textColor="#845EC2"
+            android:textColor="@color/black"
             android:fontFamily="sans-serif"
     />
 
-
 </LinearLayout>
+</ScrollView>
